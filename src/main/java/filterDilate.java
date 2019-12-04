@@ -1,11 +1,10 @@
-​
-import org.bytedeco.opencv.opencv_core.Mat;
+/*​import org.bytedeco.opencv.opencv_core.Mat;
 import org.bytedeco.opencv.opencv_core.Size;
 import org.opencv.imgproc.Imgproc;
 ​
 import static org.bytedeco.opencv.global.opencv_imgproc.*;
 
-public class filterDilate {
+public class filterDilate extends FilterProc {
 
     public Mat filterDilate(Mat image) {
         int size = 8;
@@ -14,5 +13,4 @@ public class filterDilate {
         dilate(image, result, element);
         return result;
     }
-
-}
+}*/
