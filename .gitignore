@@ -1,0 +1,14 @@
+
+.idea/
+
+gradlew
+
+gradlew.bat
+
+settings.gradle
+
+*.gradle
+
+.DS_Store
+
+gradle/wrapper/
