@@ -1,5 +1,4 @@
-package com.yapitive.imagefilter;
-
+/*package com.mycompagny.insta;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
@@ -28,4 +27,4 @@ public class Console {
     {
 
     }
-}
+}*/

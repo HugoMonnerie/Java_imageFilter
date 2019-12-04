@@ -1,4 +1,4 @@
-package com.yapitive.imagefilter;
+package com.mycompagny.insta;
 
 import org.bytedeco.opencv.opencv_core.Mat;
 import org.bytedeco.opencv.opencv_core.Size;
@@ -8,6 +8,11 @@ import static org.bytedeco.opencv.global.opencv_imgproc.dilate;
 import static org.bytedeco.opencv.global.opencv_imgproc.getStructuringElement;
 
 public class filterDilate extends FilterProc {
+    public int size;
+
+    public filterDilate(int size) {
+        this.size = size;
+    }
 
     @Override
     public Mat proc(Mat img) {
