@@ -11,21 +11,18 @@ public class Logger
     private FileWriter myWriter;
     private File f;
 
-    public void writeFile(String message)
-    {
+    public void writeFile(String message) throws ImagefiltersException {
         try {
             myWriter = new FileWriter("log.log",true);
             myWriter.write(message + "\n");
             myWriter.close();
         } catch (IOException e)
         {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
+            throw new ImagefiltersException("An error occurred.", e);
         }
     }
 
-    public void readFile()
-    {
+    public void readFile() throws ImagefiltersException {
         try {
             f = new File("log.log");
             Scanner myReader = new Scanner(f);
@@ -37,30 +34,26 @@ public class Logger
             myReader.close();
         } catch (FileNotFoundException e)
         {
-            System.out.println("Can't read the folder.");
-            e.printStackTrace();
+            throw new ImagefiltersException("Can't read the folder.", e);
         }
     }
 
-    public void removeAll()
-    {
+    public void removeAll() throws ImagefiltersException {
         try {
             myWriter = new FileWriter("log.log");
             myWriter.write("");
             myWriter.close();
         } catch (IOException e)
         {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
+            throw new ImagefiltersException("I don't delete a text in a file", e);
         }
     }
 
-    public void closeFile()
-    {
+    public void closeFile() throws ImagefiltersException {
         try {
             myWriter.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new ImagefiltersException("I don't close a file", e);
         }
     }
 }
