@@ -7,9 +7,13 @@ import org.bytedeco.opencv.opencv_core.Mat;
 import java.io.File;
 
 public class App {
+<<<<<<< HEAD
     public static void main(String[] args) throws ParseException
     {
         Logger log = new Logger();
+=======
+    public static void main(String[] args) throws ParseException {
+>>>>>>> master
 
         System.out.println("\n\033[1;33mWelcome to our application !\033[0m\n");
 
