@@ -1,4 +1,4 @@
-/*package com.mycompagny.insta;
+/*package com.yapitive.imagefilter;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
