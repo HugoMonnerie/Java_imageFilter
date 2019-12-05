@@ -16,7 +16,6 @@ public class filterDilate extends FilterProc {
 
     @Override
     public Mat proc(Mat img) {
-        int size = 2;
         Mat result = img.clone();
         Mat element = getStructuringElement(Imgproc.MORPH_RECT, new Size(2 * size + 1, 2 * size + 1));
         dilate(img, result, element);
