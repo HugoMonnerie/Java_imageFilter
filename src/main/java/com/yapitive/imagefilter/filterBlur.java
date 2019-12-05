@@ -1,4 +1,4 @@
-package com.mycompagny.insta;
+package com.yapitive.imagefilter;
 
 import org.bytedeco.opencv.opencv_core.Mat;
 import org.bytedeco.opencv.opencv_core.Size;

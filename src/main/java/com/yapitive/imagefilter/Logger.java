@@ -1,4 +1,4 @@
-package com.mycompagny.insta;
+package com.yapitive.imagefilter;
 
 import java.io.FileNotFoundException;
 import java.io.File;
