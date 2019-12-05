@@ -11,6 +11,11 @@ public class Logger
     private FileWriter myWriter;
     private File f;
 
+    /**
+     * Writes in the log every time an image is being worked on.
+     * @param message custom String used to define a precise context.
+     * @throws ImagefiltersException
+     */
     public void writeFile(String message) throws ImagefiltersException {
         try {
             myWriter = new FileWriter("log.log",true);

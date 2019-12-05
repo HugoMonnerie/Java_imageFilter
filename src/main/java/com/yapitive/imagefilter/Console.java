@@ -8,6 +8,12 @@ import java.io.File;
 
 public class Console {
 
+    /**
+     * Defines the application's options, convert Options to String to make it usable and then defines a separator for the options and another one for the arguments of these options. Applies filters while there are still given filters not applied to the image.
+     * @param args List of the options that our application require to run.
+     * @param log Make our Logger usable.
+     * @throws ImagefiltersException
+     */
     public void parse(String[] args,Logger log) throws ImagefiltersException {
         log.removeAll();
 
@@ -17,7 +23,7 @@ public class Console {
         options.addOption("filters", true, "list filters");
 
         CommandLineParser parser = new DefaultParser();
-        CommandLine cmd = null;
+        CommandLine cmd;
         try {
             cmd = parser.parse(options, args);
         } catch (ParseException e) {
