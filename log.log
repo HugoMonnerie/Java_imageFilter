@@ -1,0 +1,10 @@
+[1;32mApplying filters to [1;35mImg/Unknown.jpg
+[1;32mApplying [1;35mblur:11
+[1;32mApplying [1;35mgrayscale
+[1;32mSaved filtered image to : [1;35moutput/Unknown.jpg[0m
+-------------------------------------------
+[1;32mApplying filters to [1;35mImg/meme2.jpg
+[1;32mApplying [1;35mblur:11
+[1;32mApplying [1;35mgrayscale
+[1;32mSaved filtered image to : [1;35moutput/meme2.jpg[0m
+-------------------------------------------

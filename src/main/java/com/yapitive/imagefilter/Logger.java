@@ -6,15 +6,13 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.FileHandler;
+import java.util.logging.SimpleFormatter;
 
 public class Logger
 {
     private FileWriter myWriter;
-    File f;
-    public Logger()
-    {
-
-    }
+    private File f;
 
     public void writeFile(String message)
     {
@@ -22,7 +20,6 @@ public class Logger
             myWriter = new FileWriter("log.log",true);
             myWriter.write(message + "\n");
             myWriter.close();
-            System.out.println("Successfully wrote to the file.");
         } catch (IOException e)
         {
             System.out.println("An error occurred.");
@@ -44,6 +41,19 @@ public class Logger
         } catch (FileNotFoundException e)
         {
             System.out.println("Can't read the folder.");
+            e.printStackTrace();
+        }
+    }
+
+    public void removeAll()
+    {
+        try {
+            myWriter = new FileWriter("log.log");
+            myWriter.write("");
+            myWriter.close();
+        } catch (IOException e)
+        {
+            System.out.println("An error occurred.");
             e.printStackTrace();
         }
     }
